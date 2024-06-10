@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMS Recommendation Quiz</title>
+
+<link rel="stylesheet" href="src/style/index.css">
+<link rel="stylesheet" href="src/style/App.css">
+<script src="src/scripts/index.js"></script>
+
+</head>
+<body>
+<div id="quiz-container">
+  <h1>CMS Recommendation Quiz</h1>
+
+  <div id="question-container">
+    <p id="question-text"></p>
+    <div id="options-container"></div>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+  </div>  
+
+  <div id="result-container" class="hide">
+    <h2>Recommended CMS:</h2>
+    <p id="result-text"></p>
+    <button id="tryagain-btn" onclick="initializeQuiz()">Try Again</button>
+  </div>
+</div>
+</body>
+</html>
