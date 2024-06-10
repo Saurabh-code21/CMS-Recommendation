@@ -314,20 +314,17 @@ const old_questions = [
   let scores = [0,0,0,0];
   let questions ;
 
-  function fetchJSONData() {
-    fetch("./src/assets/questions.json")
-        .then((res) => {
-            if (!res.ok) {
-                throw new Error
-                    (`HTTP error! Status: ${res.status}`);
-            }
-            questions =  res.json();
-            console.log(questions);
-        })
-        .then((data) => 
-              console.log(data))
-        .catch((error) => 
-               console.error("Unable to fetch data:", error));
+  async function fetchJSONData() {
+    try {
+
+      const response = await fetch("./src/assets/questions.json");
+      questions =  await res.json();
+      console.log(questions);
+
+    }
+    catch(error){
+      console.error("Unable to fetch data:", error);    
+    }   
   }
   
   // Function to initialize the quiz
@@ -354,8 +351,7 @@ const old_questions = [
     }
     if(nextButton.classList.contains("hide")) {
       nextButton.classList.remove("hide");
-    }
-    
+    }    
   
     questionText.textContent = question.question;
     optionsContainer.innerHTML = "";
