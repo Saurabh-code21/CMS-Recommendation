@@ -318,7 +318,7 @@ const old_questions = [
     try {
 
       const response = await fetch("./src/assets/questions.json");
-      questions =  await res.json();
+      questions =  await response.json();
       console.log(questions);
       displayQuestion();
     }
