@@ -320,7 +320,7 @@ const old_questions = [
       const response = await fetch("./src/assets/questions.json");
       questions =  await res.json();
       console.log(questions);
-
+      displayQuestion();
     }
     catch(error){
       console.error("Unable to fetch data:", error);    
@@ -332,8 +332,7 @@ const old_questions = [
     currentQuestion = 0;
     answers = []; 
     scores = [0,0,0,0];
-    fetchJSONData();
-    displayQuestion();
+    fetchJSONData();    
   }
   
   // Function to display the current question
