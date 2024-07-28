@@ -14,7 +14,8 @@
       //const response = await fetch("./src/assets/questions.json");
       
       questions =  await response.json();
-      console.log(questions);
+      //To check if all questions loaded properly
+      //console.log(questions);
       displayQuestion();
     }
     catch(error){
@@ -31,7 +32,8 @@
       //const response = await fetch("./src/assets/results.json");
       
       results =  await response.json();
-      console.log(results);
+      //To check if all results loaded properly
+      //console.log(results);
     }
     catch(error){
       console.error("Unable to fetch data:", error);    

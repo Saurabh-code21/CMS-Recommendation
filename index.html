@@ -22,9 +22,19 @@
 
   <div id="result-container" class="hide">
     <h2>Recommended CMS:</h2>
-    <a href="#" class="result-link"><h3 id="result-title"></h3></a>
-    <a href="#" class="result-link"><img id="result-image"></a>
-    <p id="result-text"></p>
+    <div class="result-block">
+      <div class="result-image-block">
+        <a href="#" class="result-link">
+          <img id="result-image">
+        </a>        
+      </div>
+      <div class="result-text-block">
+        <a href="#" class="result-link">
+          <h3 id="result-title"></h3>
+        </a>
+        <p id="result-text"></p>
+      </div>      
+    </div>
     <button id="tryagain-btn" onclick="initializeQuiz()">Try Again</button>
   </div>
 </div>
