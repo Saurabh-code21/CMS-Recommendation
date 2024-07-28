@@ -2,6 +2,7 @@
   {
     "question_id": "01",
     "question": "What type of website are you planning to build?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -40,6 +41,7 @@
   {
     "question_id": "02",
     "question": "How much customization do you require for your website's design?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -78,6 +80,7 @@
   {
     "question_id": "03",
     "question": "What is your level of technical expertise or What technical expertise your dev team has?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -116,6 +119,7 @@
   {
     "question_id": "04",
     "question": "How important is scalability and performance for your website?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -154,6 +158,7 @@
   {
     "question_id": "05",
     "question": "Are you planning to integrate third-party plugins or extensions?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -192,6 +197,7 @@
   {
     "question_id": "06",
     "question": "What is your budget for website development and maintenance?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -230,6 +236,7 @@
   {
     "question_id": "07",
     "question": "Do you require multi-language support for your website?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
@@ -268,6 +275,7 @@
   {
     "question_id": "08",
     "question": "How important is ease of use and user-friendliness for your CMS for your content-editors?",
+    "question-image": "",
     "options": [
       {
         "option_id": "01",
