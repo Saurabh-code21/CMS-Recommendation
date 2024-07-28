@@ -108,10 +108,10 @@
 
     hideQuestions();
     const resultContainer = document.getElementById("result-container");
-    const resultTitle = document.getElementById("result-title");
-    const resultText = document.getElementById("result-text");
-    const resultImage = document.getElementById("result-image");
-    const resultLinks = document.getElementsByClassName("result-link");
+    // const resultTitle = document.getElementById("result-title");
+    // const resultText = document.getElementById("result-text");
+    // const resultImage = document.getElementById("result-image");
+    // const resultLinks = document.getElementsByClassName("result-link");
 
     if(resultContainer.classList.contains("hide")) {
       resultContainer.classList.remove("hide");
@@ -132,22 +132,29 @@
     
     if(highestScore != -1 && highestScoreIndex != -1){
       switch(highestScoreIndex) {
-        case 0 :  resultTitle.textContent = results[0].title;
-                  resultText.textContent = results[0].text;
-                  resultImage.src = results[0].image;
-                  resultLinks.forEach( resultLink => {resultLink.href = results[0].resultLink});
+        case 0 :  resultContentUpdate( results[0]);
+                  // resultTitle.textContent = results[0].name;
+                  // resultText.textContent = results[0].text;
+                  // resultImage.src = results[0].image;
+                  // Array.from(resultLinks).forEach( resultLink => {resultLink.href = results[0].link});
                   break;
-        case 1 :  resultTitle.textContent = results[1].title;
-                  resultText.textContent = results[1].text;
-                  resultImage.src = results[1].image;
+        case 1 :  resultContentUpdate( results[1]);
+                  // resultTitle.textContent = results[1].name;
+                  // resultText.textContent = results[1].text;
+                  // resultImage.src = results[1].image;
+                  // Array.from(resultLinks).forEach( resultLink => {resultLink.href = results[1].link});
                   break;
-        case 2 :  resultTitle.textContent = results[2].title;
-                  resultText.textContent = results[2].text;
-                  resultImage.src = results[2].image;
+        case 2 :  resultContentUpdate( results[2]);
+                  // resultTitle.textContent = results[2].name;
+                  // resultText.textContent = results[2].text;
+                  // resultImage.src = results[2].image;
+                  // Array.from(resultLinks).forEach( resultLink => {resultLink.href = results[2].link});
                   break;
-        case 3 :  resultTitle.textContent = results[3].title;
-                  resultText.textContent = results[3].text;
-                  resultImage.src = results[3].image;
+        case 3 :  resultContentUpdate( results[3]);
+                  // resultTitle.textContent = results[3].name;
+                  // resultText.textContent = results[3].text;
+                  // resultImage.src = results[3].image;
+                  // Array.from(resultLinks).forEach( resultLink => {resultLink.href = results[3].link});
                   break;
         default : resultText.textContent = "No recommendation found.";
                   break;
@@ -157,7 +164,21 @@
     //resultText.textContent = recommendedCMS ? `${recommendedCMS}: ${recommendations[recommendedCMS].description}` : "No recommendation found.";
     // resultContainer.style.display = "block";
     
-  }  
+  }
+  
+  function resultContentUpdate( result){
+
+    //const resultContainer = document.getElementById("result-container");
+    const resultTitle = document.getElementById("result-title");
+    const resultText = document.getElementById("result-text");
+    const resultImage = document.getElementById("result-image");
+    const resultLinks = document.getElementsByClassName("result-link");
+
+    resultTitle.textContent = results.name;
+    resultText.textContent = results.text;
+    resultImage.src = results.image;
+    Array.from(resultLinks).forEach( resultLink => {resultLink.href = results.link});
+  }
   
   // Function to proceed to the next question
   function nextQuestion() {
