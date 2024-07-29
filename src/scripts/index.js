@@ -110,10 +110,6 @@
 
     hideQuestions();
     const resultContainer = document.getElementById("result-container");
-    // const resultTitle = document.getElementById("result-title");
-    // const resultText = document.getElementById("result-text");
-    // const resultImage = document.getElementById("result-image");
-    // const resultLinks = document.getElementsByClassName("result-link");
 
     if(resultContainer.classList.contains("hide")) {
       resultContainer.classList.remove("hide");
@@ -139,10 +135,7 @@
       const resultText = document.getElementById("result-text");
       resultText.textContent = "No recommendation found.";
     }
-    
-    //resultText.textContent = recommendedCMS ? `${recommendedCMS}: ${recommendations[recommendedCMS].description}` : "No recommendation found.";
-    // resultContainer.style.display = "block";
-    
+        
   }
   
   function resultContentUpdate(result){
@@ -153,8 +146,8 @@
     const resultImage = document.getElementById("result-image");
     const resultLinks = document.getElementsByClassName("result-link");
 
-    resultTitle.textContent = result.name;
-    resultText.textContent = result.text;
+    resultTitle.innerHTML = result.name;
+    resultText.innerHTML = result.text;
     resultImage.src = result.image;
     Array.from(resultLinks).forEach( resultLink => {resultLink.href = result.link});
   }

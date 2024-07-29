@@ -48,7 +48,7 @@
         "text": "Minimal customization",
         "sitecore": 5,
         "umbraco": 7,
-        "kontentai": 7,
+        "kontentai": 8,
         "wordpress": 10
       },
       {
@@ -56,7 +56,7 @@
         "text": "Moderate customization",
         "sitecore": 7,
         "umbraco": 10,
-        "kontentai": 7,
+        "kontentai": 8,
         "wordpress": 9
       },
       {
@@ -87,7 +87,7 @@
         "text": "Beginner - have little or no experience in web development",
         "sitecore": 2,
         "umbraco": 5,
-        "kontentai": 5,
+        "kontentai": 7,
         "wordpress": 10
       },
       {
@@ -126,7 +126,7 @@
         "text": "Not very important",
         "sitecore": 5,
         "umbraco": 5,
-        "kontentai": 5,
+        "kontentai": 9,
         "wordpress": 7
       },
       {
@@ -257,7 +257,7 @@
       {
         "option_id": "03",
         "text": "Yes, I need built-in support for multiple languages",
-        "sitecore": 10,
+        "sitecore": 9,
         "umbraco": 9,
         "kontentai": 9,
         "wordpress": 7

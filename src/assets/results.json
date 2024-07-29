@@ -2,28 +2,28 @@
     {
         "id": 0,
         "name": "Sitecore",
-        "text": "Sitecore should be your choice. <br><br> <strong>Best For:</strong> Enterprise-level organizations needing extensive customization and scalability.",
+        "text": "Sitecore should be your choice. <br><br> <strong>Best For :</strong> Enterprise-level organizations needing extensive customization and scalability.",
         "image": "../CMS-Recommendation/src/assets/img/results/sitecore-logo-text.png",
         "link" : "https://www.sitecore.com/"
     },
     {
         "id": 1,
         "name": "Umbraco",
-        "text": "Umbraco should be your choice. <br><br> <strong>Best For:</strong> Mid-sized businesses and organizations looking for an open-source, flexible CMS.",
+        "text": "Umbraco should be your choice. <br><br> <strong>Best For :</strong> Mid-sized businesses and organizations looking for an open-source, flexible CMS.",
         "image": "../CMS-Recommendation/src/assets/img/results/umbraco-logo-text.png",
         "link" : "https://umbraco.com/"
     },
     {
         "id": 2,
         "name": "Kontent.ai",
-        "text": "Kontent.ai should be your choice. <br><br> <strong>Best For:</strong> Businesses seeking a headless CMS for modern, multi-channel content delivery.",
+        "text": "Kontent.ai should be your choice. <br><br> <strong>Best For :</strong> Businesses seeking a headless CMS for modern, multi-channel content delivery.",
         "image": "../CMS-Recommendation/src/assets/img/results/kontent-ai-logo-text.png",
         "link" : "https://kontent.ai/"
     },
     {
         "id": 3,
         "name": "WordPress",
-        "text": "WordPress should be your choice. <br><br> <strong>Best For:</strong> Small to large businesses looking for an easy-to-use, highly extendable CMS with a vast ecosystem.",
+        "text": "WordPress should be your choice. <br><br> <strong>Best For :</strong> Small to large businesses looking for an easy-to-use, highly extendable CMS with a vast ecosystem.",
         "image": "../CMS-Recommendation/src/assets/img/results/wordpress-logo-text.png",
         "link" : "https://wordpress.com/"
     }
